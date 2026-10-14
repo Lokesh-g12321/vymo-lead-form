@@ -1,0 +1,13 @@
+body {
+  font-family: var(--font-family);
+  color: var(--color-text);
+}
+
+ion-content.page-bg {
+  --background: var(--color-page);
+}
+
+ion-toolbar {
+  --background: var(--color-primary);
+  --color: #fff;
+}

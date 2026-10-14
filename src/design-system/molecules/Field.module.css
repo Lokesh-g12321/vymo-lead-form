@@ -1,0 +1,28 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  min-width: 0;
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+
+.required {
+  color: var(--color-error);
+  margin-left: 2px;
+}
+
+.hint {
+  font-size: var(--font-size-sm);
+  color: var(--color-muted);
+}
+
+.error {
+  font-size: var(--font-size-sm);
+  color: var(--color-error);
+  overflow-wrap: anywhere;
+}
