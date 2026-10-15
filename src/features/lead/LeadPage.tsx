@@ -25,7 +25,7 @@ export function LeadPage() {
         <div className={styles.wrapper}>
           <section className={styles.card}>
             <h1 className={styles.heading}>New lead</h1>
-            <p className={styles.subheading}>Fill in the details below and we’ll get in touch.</p>
+            <p className={styles.subheading}>Fill in the details below and we'll get in touch.</p>
 
             <DynamicForm config={leadFormConfig} validate={validateLead} onSubmit={handleSubmit} />
           </section>

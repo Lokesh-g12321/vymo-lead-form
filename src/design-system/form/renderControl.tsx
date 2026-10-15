@@ -11,7 +11,6 @@ type ControlProps = {
   onBlur: () => void;
 };
 
-// Maps a config type to the atom that draws it. New types only need a case here.
 export function renderControl({ field, id, value, invalid, describedBy, onChange, onBlur }: ControlProps) {
   const common = { id, name: field.name, invalid, describedBy, onBlur };
 

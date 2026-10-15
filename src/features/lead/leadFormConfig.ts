@@ -1,7 +1,6 @@
 import type { FieldConfig } from '../../design-system';
 
-// Mock config for the lead capture screen.
-// To add a field, add an entry here. Nothing else needs to change.
+// lead form fields
 export const leadFormConfig: FieldConfig[] = [
   {
     name: 'fullName',
@@ -19,7 +18,7 @@ export const leadFormConfig: FieldConfig[] = [
     width: 'half',
     validations: [
       { kind: 'required', message: 'Please enter an email' },
-      { kind: 'email', message: 'This email doesn’t look right' },
+      { kind: 'email', message: "This email doesn't look right" },
     ],
   },
   {

@@ -7,7 +7,7 @@ function isEmpty(value: unknown): boolean {
   return String(value ?? '').trim() === '';
 }
 
-// Returns an error message when the rule fails, otherwise null.
+// returns the error text or null
 function checkRule(rule: Rule, value: unknown): string | null {
   const text = String(value ?? '').trim();
 
@@ -25,8 +25,7 @@ function checkRule(rule: Rule, value: unknown): string | null {
   }
 }
 
-// Pure function: same config and values always give the same errors.
-// Hidden fields are skipped, so company name is only required when it is shown.
+// skip hidden fields (company name only when lead type is company)
 export function validateLead(config: FieldConfig[], values: FormValues): FormErrors {
   const errors: FormErrors = {};
 

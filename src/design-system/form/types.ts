@@ -14,7 +14,7 @@ export type FieldConfig = {
   hint?: string;
   options?: { label: string; value: string }[];
   validations?: Rule[];
-  // show this field only when another field has a given value
+  // show only when another field has this value
   showWhen?: { field: string; equals: string };
   // 'full' spans both columns on desktop
   width?: 'half' | 'full';

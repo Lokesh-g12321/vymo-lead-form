@@ -1,4 +1,4 @@
-/* Mobile first: one column, full width inputs */
+/* mobile */
 .form {
   display: grid;
   grid-template-columns: 1fr;
@@ -28,9 +28,9 @@
   color: var(--color-error);
 }
 
-/* Tablet follows the mobile layout */
+/* tablet same as mobile */
 
-/* Desktop: two columns, button sits at the end of the form */
+/* desktop */
 @media (min-width: 1025px) {
   .form {
     grid-template-columns: 1fr 1fr;

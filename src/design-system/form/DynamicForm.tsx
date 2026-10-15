@@ -47,7 +47,7 @@ export function DynamicForm({ config, validate, onSubmit, submitLabel = 'Submit'
 
     if (Object.keys(errors).length > 0) return;
 
-    // only send what the user can actually see
+    // only visible fields
     const result: FormValues = {};
     fields.forEach((field) => (result[field.name] = values[field.name]));
     onSubmit(result);
@@ -59,7 +59,7 @@ export function DynamicForm({ config, validate, onSubmit, submitLabel = 'Submit'
     <form className={styles.form} onSubmit={handleSubmit} noValidate>
       {fields.map((field) => {
         const id = `field-${field.name}`;
-        // after a submit attempt, every visible field shows its error
+        // show all errors after submit
         const error = touched[field.name] || triedSubmit ? errors[field.name] : undefined;
         const describedBy = error ? `${id}-error` : field.hint ? `${id}-hint` : undefined;
         const required = field.validations?.some((rule) => rule.kind === 'required');

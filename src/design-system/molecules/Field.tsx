@@ -10,7 +10,6 @@ type Props = {
   children: ReactNode;
 };
 
-// Label on top, the control in the middle, then hint and error below it.
 export function Field({ id, label, required, hint, error, children }: Props) {
   return (
     <div className={styles.field}>
